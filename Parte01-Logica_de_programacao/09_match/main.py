@@ -19,4 +19,4 @@ match opcao:
     case "4":
         print(f"A Divisão é {x/y}.")
     case _:
-        print("Opção Inválida.")2
+        print("Opção Inválida.")

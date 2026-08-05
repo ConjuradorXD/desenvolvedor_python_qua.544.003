@@ -75,7 +75,7 @@ while True:
 
         # grava o ingresso em arquivo
         ingresso = f"🎫 Ingresso comprado para: {nome}\n🎞️ Filme: {filme}\n😎 Tenha um bom filme!"
-        with open("programa_01-02/ingresso.txt", "w", encoding="utf-8") as f:
+        with open("PROGRAMA_01-02/Bilhetes/ingresso.txt", "w", encoding="utf-8") as f:
             f.write(ingresso)
         
         # encerra o loop

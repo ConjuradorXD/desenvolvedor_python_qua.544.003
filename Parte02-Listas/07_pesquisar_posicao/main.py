@@ -15,4 +15,4 @@ if cidade in cidade:
     indice = cidade.index(cidade)
     print(f"Indice de {cidade} na lista é {indice}.")
 else:
-    print("Cidade não encontrada.")Fora
+    print("Cidade não encontrada.")

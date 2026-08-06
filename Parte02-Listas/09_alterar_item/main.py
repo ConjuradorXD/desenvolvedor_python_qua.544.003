@@ -35,5 +35,8 @@ if nome_antigo in nomes:
     print("")
     for nome in nomes:
         print(nome)
+    print("")
+    print("------------------")
+    print("")
 else:
     print("Nme não encontrado.")

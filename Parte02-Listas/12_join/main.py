@@ -1,7 +1,6 @@
 # Separador 
 
 import os
-
 os.system("cls" if os.name == "nt" else "clear")
 
 nomes = ["Juleidy","Lorindinalvety"]

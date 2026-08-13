@@ -7,11 +7,16 @@
 import os
 import json
 
-aluno = {
+os.system("cls" if os.name == "nt" else "clear")
+
+alunos = []
+
+alunos = {
     'nome': "fulano",
     'nota1': "0",
     'nota2': "0",
     'nota3': "0",
+    'resultado': "0",
 }
 
 abrir = ""
@@ -35,40 +40,28 @@ while True:
 
     match opcao:
             case "1":
+                aluno = {}
+                notas = [0,0,0]
 
-                aluno['nome'] = input("Informe o nome do aluno: ").strip().title()
-                aluno['nota1'] = input("Informe a nota do aluno em Matemática: ").replace(",",".")
-                aluno['nota2'] = input("Informe a nota do aluno em Geometria: ").replace(",",".")
-                aluno['nota3'] = input("Informe a nota do aluno em Programação: ").replace(",",".")
+                aluno['nome'] = input("Informe a nome do aluno: ").strip().title()
+                for i in range(len(notas)):
+                    notas[1] = float(input(f"Informe a (i+1)ª nota: ").replace(",","."))
 
-                # exibe o dicionário com o novo valor da chave escolhida
-                for chave, valor in usuario.items():
-                print(f"{chave.capitalize()}: {valor}")
-else:
-    print("Chave não encontrada.")
-                usuarios.append(usuario)
+                aluno['notas'] = notas
+                aluno['média'] = sum(notas)/len(notas)
+                aluno['resultado'] = "aprovado" if aluno['media'] >= 7 else "reprovado"
+                alunos.append(aluno)
 
-                os.system("cls" if os.name == "nt" else "clear")
+                with open("atividade_03/arquivo.json","w")encoding="utf-8") as f:
+                    json.dump(alunos, f)
 
-                if nota >= 0 and nota <= 10:
-                    if nota >= 7:
-                        print(f"O Aluno {'nome'}, está aprovado.")
-                elif nota >= 5:
-                    print(f"O Aluno {'nome'}, está de recuperação.")
-                else:
-                    print(f"O Aluno {'nome'}, está reprovado.")
-
-                with open(f"lista_atividades_02/atividade_03/{arquivo}.json","w",encoding="utf-8") as f:
-                    json.dump(usuarios, f)
-                    
-            case "2":
-                os.system("cls" if os.name == "nt" else "clear")
-                print("Programa encerrado!")
-                break
-         
-            case _:
-                print("")
-                print("Opção invalida!")
-                print("")
+                print("Dados do aluno gravados com sucesso")
                 continue
+        
+            case "2":
+                break
+            case _:
+              print("Opção Inválida.")
+              continue
+
                 

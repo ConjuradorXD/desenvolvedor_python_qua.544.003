@@ -52,8 +52,9 @@ while True:
                 aluno['resultado'] = "aprovado" if aluno['media'] >= 7 else "reprovado"
                 alunos.append(aluno)
 
-                with open("atividade_03/arquivo.json","w")encoding="utf-8") as f:
-                    json.dump(alunos, f)
+                with open("atividade_03/arquivo.json","w",encoding="utf-8") as f:
+                                json.dump(alunos, f)
+                print("Dados do aluno gravados com sucesso!")
 
                 print("Dados do aluno gravados com sucesso")
                 continue

@@ -1,6 +1,6 @@
-# Declarar uma função:
+# declara uma função
 def boas_vindas():
-    print("Não seja bem vindo! 😎")
+    print("Seja bem vindo! 😎🐍")
 
-# Algoritimo principal
+# algoritmo principal
 boas_vindas()

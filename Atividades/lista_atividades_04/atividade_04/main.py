@@ -1,31 +1,13 @@
 
-import os
-import math
+from modulo import limpar,potencia,raiz,volume_cubico,volume_cilindro
 
 # 1 - Limpa o terminal:
 
-def limpar():
-    os.system("cls" if os.name == "nt" else "clear")
+def main():
 
-def somar(x, y):
-    return x+y
-
-def subtrair(x, y):
-    return x-y
-
-def multiplicar(x, y):
-    return x*y
-
-def dividir(x, y):
-    return x/y
-
-
-# 2 - Faça um programa que o usuário escolha executar uma dessas funções ou sair do programa.
-
-limpar()
-
-while True:
-    print(" ")
+ while True:
+    limpar()
+    print("")
     print(f"{'-'*9} Módulos: {'-'*11}")
     print("")
     print("Lista de opções:")
@@ -41,22 +23,93 @@ while True:
     opcao = input("Informe a opção desejada: ").strip()
     limpar()
 
+
     match opcao:
         case "1":
+          # 2 - Calcula a poténcia de um número informado pelo usuário elevado outro número informado pelo usúario.
           limpar()
-          x = int(input("Informe o valor de 'X': ").replace(",","."))
-          y = int(input("Informe o valor de 'Y': ").replace(",","."))
+          print("")
+          x = int(input("Informe o valor de X: ").replace(",","."))
+          y = int(input("Informe o valor de Y: ").replace(",","."))
           limpar()
+          print("")
+          print(f"{'-'*14} Resultado: {'-'*14}")
+          print("")
+          print(f"{x} elevado a {y} = {potencia(x , y)}")
+          print("")
+          print("")
+          print("1 - Deseja fazer outra operação?.")
+          print("2 - Sair do programa.")
+          print("")
+          print(f"{'-'*39}")
+          print("")
+          opcao = input("Informe sua opção: ").strip()
 
-          x = multiplicar(x,y)
-
-          limpar()
-          print(f"O valor da exponenciação é : {multiplicar(x, y)}")
+          match opcao:
+            case "1":
+              continue
+            case "2":
+              break
+            case _:
+              print("Opção inválida.")
+              continue
 
         case "2":
-          pass
+          # 3 - Calcula a raiz quadrada de um número inforamdo pelo usuário.
+          limpar()
+          x = int(input("Informe um número inteiro: ").replace(",","."))
+          limpar()
+          print("")
+          print(f"{'-'*14} Resultado: {'-'*14}")
+          print("")
+          print(f"Raiz quadrada de {x} = {raiz(x)}")
+          print("")
+          print("")
+          print("1 - Deseja fazer outra operação?.")
+          print("2 - Sair do programa.")
+          print("")
+          print(f"{'-'*39}")
+          print("")
+          opcao = input("Informe sua opção: ").strip()
+
+          match opcao:
+            case "1":
+              continue
+            case "2":
+              break
+            case _:
+              print("Opção inválida.")
+              continue
+
         case "3":
-          pass
+          limpar()
+          print("")
+          b = int(input("Informe o valor da Base: ").replace(",","."))
+          l = int(input("Informe o valor da Largura: ").replace(",","."))
+          h = int(input("Informe o valor da altura: ").replace(",","."))
+          
+          limpar()
+          print("")
+          print(f"{'-'*14} Resultado: {'-'*14}")
+          print("")
+          print(f"(Volume cúbico é {volume_cubico})")
+          print("")
+          print("")
+          print("1 - Deseja fazer outra operação?.")
+          print("2 - Sair do programa.")
+          print("")
+          print(f"{'-'*39}")
+          print("")
+          opcao = input("Informe sua opção: ").strip()
+
+          match opcao:
+            case "1":
+              continue
+            case "2":
+              break
+            case _:
+              print("Opção inválida.")
+              continue
         case "4":
           pass
         case "5":

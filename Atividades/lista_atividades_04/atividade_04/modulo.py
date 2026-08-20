@@ -5,7 +5,7 @@ import math
 
 def limapr():
 
-def potencia(x, y):
+def potencia(x ,y):
     return x**y
 
 def raiz(x):

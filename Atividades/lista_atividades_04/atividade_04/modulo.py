@@ -1,11 +1,12 @@
 # Modulo com as funções:
 
-import os 
 import math
+import os
 
-def limapr():
+def limpar():
+    os.system("cls" if os.name == "nt" else "clear")
 
-def potencia(x ,y):
+def potencia(x, y):
     return x**y
 
 def raiz(x):
@@ -14,5 +15,5 @@ def raiz(x):
 def volume_cubico(b, l, h):
     return b*l*h
 
-def volume_cilindrico(r, h):
-    return math.pi*r*h 
+def volume_cilindro(r, h):
+    return math.pi*r*h

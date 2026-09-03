@@ -20,8 +20,37 @@
               "icon": "lucide-file",
               "title": "2 - 02_gerador_piadas"
             }
+          },
+          {
+            "id": "f7171110fa089b30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2 - 04_git_poltergeist.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2 - 04_git_poltergeist"
+            }
+          },
+          {
+            "id": "b291de84d07f221a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2 - 04_git_poltergeist.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2 - 04_git_poltergeist"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -188,6 +217,12 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "b9778c6012c50b43",
-  "lastOpenFiles": []
+  "active": "b291de84d07f221a",
+  "lastOpenFiles": [
+    "1 - 03_03_automacao.md",
+    "2 - 04_git_poltergeist.md",
+    "aula 32 - python 02I0",
+    "1 - Aluno Wallace/Aula 2 - python 25I06/2 - Venv.md",
+    "1 - Aluno Wallace/Aula 31 - python 01I09/2 - 02_gerador_piadas.md"
+  ]
 }

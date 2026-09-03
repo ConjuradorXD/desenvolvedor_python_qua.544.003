@@ -27,3 +27,10 @@ py -v
 ```python
 py install -- update
 ```
+
+7 - requirements.txt:
+
+```python
+pip freeze > requirements.txt
+```
+

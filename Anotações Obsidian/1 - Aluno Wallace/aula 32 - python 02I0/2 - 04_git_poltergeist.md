@@ -5,4 +5,14 @@
 yinstaller --onefile --name "Git Poltergeist v1.0" --icon "icone1.ico" main.py
 ```
 
-com o nome do icone que eu escolhi 
+depois de fazer isso gerar o comando: 
+
+```python
+pip freeze > requirements.txt
+```
+
+os arquivos gerados para criar o arquivo executavel, vamos tirar do commit com o arquivo:
+
+```python
+.gitignore
+```

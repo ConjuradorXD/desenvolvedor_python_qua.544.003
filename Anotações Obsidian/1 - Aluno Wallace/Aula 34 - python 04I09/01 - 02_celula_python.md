@@ -7,3 +7,5 @@
 4 - quando clicar no + code,  você coloca o codigo python
 5 - ![[Pasted image 20260904194956.png]]
 
+6 - sempre que eu abrir um notebook, eu preciso executar todas as celular de cima para baixo na ordem, pois o sistema reseta os valores. 
+7 - primeiro preciso escolher a opção executar tudo.

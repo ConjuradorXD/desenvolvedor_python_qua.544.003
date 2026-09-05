@@ -13,3 +13,9 @@ pip install Pandas
 ```
 
 ![[Pasted image 20260904205619.png]]
+
+5 - nesse dataser alguns cadastros foram feitos de forma errada, analisando os dados a gente consegue perceber:
+
+![[Pasted image 20260904212147.png]]
+
+6 - alguns dados nulos foram registrados.

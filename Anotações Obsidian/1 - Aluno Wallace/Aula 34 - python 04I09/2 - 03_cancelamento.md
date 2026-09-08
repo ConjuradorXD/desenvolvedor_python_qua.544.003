@@ -12,6 +12,8 @@ Vamos começar trazendo todos os dados do dataset:
 pip install Pandas
 ```
 
+5 - colocar a -
+
 ![[Pasted image 20260904205619.png]]
 
 5 - nesse dataser alguns cadastros foram feitos de forma errada, analisando os dados a gente consegue perceber:

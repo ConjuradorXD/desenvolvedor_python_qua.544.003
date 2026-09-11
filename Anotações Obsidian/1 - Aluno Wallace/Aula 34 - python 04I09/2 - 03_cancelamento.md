@@ -37,5 +37,5 @@ pip install nbformat
 para subir o código no Github precisa tirar os gráficos em ... limpar celular. ao lado da celular e depois:
 
 ```python
-ip freeze > requirements.txt
+pip freeze > requirements.txt
 ```

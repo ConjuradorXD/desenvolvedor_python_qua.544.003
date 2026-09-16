@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poltergit</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontes.css') }}">
+  </head>
+  <body class="bg-dark" data-bs-themes="dark">
+    <main class="container vh-100 d-flex align-items-center justify-content-center">
+        
+        <section class="text-center" style="max-width: 500px; width: 100%;">
+            
+            <figure class="d-flex justify-content-center mb-3">
+                <img src="{{ url_for('static', filename='img/image.png') }}" alt="Ritual Profano">
+            </figure>
+            
+            <h1 class="mb-4">Poltergit</h1>
+            
+            <form action="/commitar" method="POST">
+                <div class="mb-3">
+                    <!-- CORRIGIDO: class="form-control" -->
+                    <input type="text" placeholder="Informe o diretório do repositório" class="form-control" name="repositorio" required>
+                </div>
+                
+                <div class="d-flex justify-content-center mt-4">
+                    <button type="submit" class="btn btn-success w-100">
+                        <strong>Commitar e fazer push</strong>
+                    </button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+    
+    <!-- CORRIGIDO: Link oficial do Bootstrap JS -->
+    <script src="https://jsdelivr.net"></script>
+  </body>
+</html>

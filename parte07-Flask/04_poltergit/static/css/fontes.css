@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Metal_Lord';
+    src: url(static/fonts/Metal_Lord.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: Metal_Lord, Helvetica, sans-serif;
+}

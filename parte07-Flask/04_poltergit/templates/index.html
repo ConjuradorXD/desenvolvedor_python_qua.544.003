@@ -4,24 +4,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Poltergit</title>
+    
+    <!-- CORRIGIDO: Link oficial do CSS do Bootstrap 5 -->
     <link href="https://jsdelivr.net" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/fontes.css') }}">
   </head>
-  <body class="bg-dark" data-bs-themes="dark">
+  <body class="bg-dark text-light">
     <main class="container vh-100 d-flex align-items-center justify-content-center">
         
         <section class="text-center" style="max-width: 500px; width: 100%;">
             
             <figure class="d-flex justify-content-center mb-3">
-                <img src="{{ url_for('static', filename='img/image.png') }}" alt="Ritual Profano">
+                <img src="{{ url_for('static', filename='img/image.png') }}" alt="Ritual Profano" class="img-fluid">
             </figure>
             
             <h1 class="mb-4">Poltergit</h1>
+        
+            {% if msg %}
+            <div class="alert alert-danger text-start mb-3" role="alert">
+                {{ msg }}
+            </div>
+            {% endif %}
             
             <form action="/commitar" method="POST">
                 <div class="mb-3">
-                    <!-- CORRIGIDO: class="form-control" -->
                     <input type="text" placeholder="Informe o diretório do repositório" class="form-control" name="repositorio" required>
                 </div>
                 
@@ -35,7 +42,6 @@
         </section>
     </main>
     
-    <!-- CORRIGIDO: Link oficial do Bootstrap JS -->
     <script src="https://jsdelivr.net"></script>
   </body>
 </html>

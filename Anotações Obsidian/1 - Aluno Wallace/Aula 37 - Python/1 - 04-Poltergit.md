@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
 ```python
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,4 +50,17 @@ if __name__ == "__main__":
 </html>
 ```
 
+
+instalar bibliotecas:
+
+```python
+PyWebView
+datetime
+pyautogui
+```
+
+```python
+pyinstaller --onefile --noconsole --name "Ritual Profano v2.0" --icon "image2.ico" --add-data "templates;templates" --add-data "static;static" app.py
+
+```
 

@@ -1,8 +1,18 @@
 from flask import Flask, render_template, request
-import pyautogui as auto  # CORRIGIDO: Adicionado 'as auto' para seus comandos funcionarem
-from datetime import date
+import pyautogui as auto  
+import webview
 
-app = Flask(__name__)
+from datetime import date
+import os
+import sys
+
+
+if getattr(sys, 'frozen', False):
+    template_folder = os.path.join(sys._MEIPASS, 'templates')
+    static_folder = os.path.join(sys._MEIPASS, 'static')
+    app = Flask(__name__, template_folder=template_folder, static_folder=static_folder)
+else:
+    app = Flask(__name__)
 
 @app.route("/")
 def index():
@@ -12,7 +22,7 @@ def index():
 
 @app.route("/commitar", methods=['POST'])
 def commitar():
-    hoje = date.today().strftime("%d/%m/%Y")  # CORRIGIDO: strftime (com f)
+    hoje = date.today().strftime("%d/%m/%Y")  
     repositorio = None
     
     if request.method == "POST":
@@ -39,4 +49,10 @@ def commitar():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    webview.create_window(
+        title="Ritual Profano",
+        url=app,
+        width=1000,
+        height=700
+    )
+    webview.start()

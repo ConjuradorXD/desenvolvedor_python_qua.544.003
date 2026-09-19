@@ -3,9 +3,9 @@
 3 - depois criar as pastas:
 
 ```python
-static / img
-templates / [includes] / [header.html] / [footer.html]
-/ base.html / index.html/
+static / img / [css] / [estilo.css] /
+templates / [includes] / [header.html] / [footer.html] /
+/ base.html / index.html /
 app.py
 
 ```
@@ -66,3 +66,5 @@ Instalar a extenção jinja
 
 {% endblock %}
 ```
+
+9 - 

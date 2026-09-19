@@ -5,7 +5,7 @@
 ```python
 static / img / [css] / [estilo.css] /
 templates / [includes] / [header.html] / [footer.html] /
-/ base.html / index.html /
+/ base.html / index.html / extracao.html /
 app.py
 
 ```

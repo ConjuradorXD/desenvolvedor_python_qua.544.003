@@ -4,7 +4,7 @@
 
 ```python
 static / img / [css] / [estilo.css] /
-templates / [includes] / [header.html] / [footer.html] /
+templates / [exportar_sucesso.html] /[includes] / [header.html] / [footer.html] /
 / base.html / index.html / extracao.html /
 app.py
 
@@ -61,10 +61,22 @@ Instalar a extenção jinja
 8 - toda vez que eu criar um arquivo que vai servir de conteúdo para uma base o código de linha é sempre esse:
 
 ```python
-{% extends 'vase.html' %}
+{% extends 'base.html' %}
 {% block content %}
 
 {% endblock %}
 ```
 
-9 - 
+9 - instalar a biblioteca :
+
+```python
+pip install easyocr
+pip install translate
+```
+
+com ela instalada vamos importar ela para o código no app.py:
+
+````python
+from translator import Translate
+para desinstalar: unistall translator
+
